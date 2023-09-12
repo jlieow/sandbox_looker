@@ -27,7 +27,12 @@ persist_with: jerome_access_demo_default_datagroup
 
 explore: clicks_table {}
 
-explore: countrycities_table {}
+explore: countrycities_table {
+  access_filter: {
+    field: countrycities_table.country
+    user_attribute: country
+  }
+}
 
 explore: customer_acquisition_table {}
 

@@ -29,6 +29,7 @@ view: customer_acquisition_table {
   measure: total__clicked {
     type: sum
     sql: ${_clicked} ;;  }
+
   measure: average__clicked {
     type: average
     sql: ${_clicked} ;;  }
@@ -57,6 +58,7 @@ view: customer_acquisition_table {
     type: string
     sql: ${TABLE}.spent ;;
   }
+  
   measure: count {
     type: count
     drill_fields: [id, name]
